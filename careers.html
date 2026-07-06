@@ -144,11 +144,10 @@
     .careers-container {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 40px 24px 90px;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 56px;
-      align-items: start;
+      padding: 60px 24px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .job-cards {
@@ -447,105 +446,22 @@
 
   <!-- ============ CAREERS CONTENT ============ -->
   <div class="careers-container">
-    
-    <!-- Left: Job Openings -->
-    <div class="job-cards">
-      <h2 class="section-title">Current Openings</h2>
-      
-      <!-- Card 1: Articleship -->
-      <div class="job-card">
-        <h3 class="job-title">CA Articleship (Trainee)</h3>
-        <div class="job-meta">
-          <span>Location: Pan-India Network</span>
-          <span>Position: Full-Time / Trainee</span>
-        </div>
-        <p class="job-desc">We are looking for motivated CA Intermediate candidates (both groups or single group cleared) who are eager to undergo rigorous 2-year practical training.</p>
-        <ul class="job-requirements">
-          <li>Hands-on learning of Statutory, Tax, and Internal Auditing.</li>
-          <li>Filing of Income Tax Returns (ITR) and GST Returns.</li>
-          <li>Company and LLP incorporation processes.</li>
-          <li>Strong conceptual understanding and communication skills.</li>
-        </ul>
-      </div>
-
-      <!-- Card 2: Semi-Qualified -->
-      <div class="job-card">
-        <h3 class="job-title">Semi-Qualified CA / Paid Assistant</h3>
-        <div class="job-meta">
-          <span>Location: Pan-India Network</span>
-          <span>Position: Full-Time</span>
-        </div>
-        <p class="job-desc">Ideal for candidates with completed articleship who have experience handling client compliance portfolios independently.</p>
-        <ul class="job-requirements">
-          <li>Reviewing books of accounts, finalizing balance sheets, and tax computations.</li>
-          <li>Drafting replies to show-cause notices for GST and Income Tax.</li>
-          <li>Supervising article clerks and reviewing their audit workpapers.</li>
-          <li>Minimum 1-2 years of relevant post-articleship experience.</li>
-        </ul>
-      </div>
-
-      <!-- Card 3: Qualified CA -->
-      <div class="job-card">
-        <h3 class="job-title">Qualified Chartered Accountant (CA)</h3>
-        <div class="job-meta">
-          <span>Location: Pan-India Network</span>
-          <span>Position: Full-Time</span>
-        </div>
-        <p class="job-desc">Looking for a young, enthusiastic Chartered Accountant who wants to lead team engagements and manage client advisory relationships.</p>
-        <ul class="job-requirements">
-          <li>Managing corporate audits, tax representations, and GST assessments.</li>
-          <li>Providing advisory on corporate laws, international tax, and financial planning.</li>
-          <li>Strong leadership qualities and communication skills.</li>
-          <li>Experience of 0-3 years post qualification.</li>
-        </ul>
-      </div>
+    <div style="max-width: 720px; width: 100%; padding: 50px 40px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+      <div style="font-size: 13px; font-weight: 700; letter-spacing: 2.5px; color: var(--accent); margin-bottom: 16px; text-transform: uppercase;">Careers</div>
+      <h2 style="font-family: var(--font-serif); font-size: 32px; font-weight: 700; color: var(--navy); margin-bottom: 20px;">We are hiring!</h2>
+      <p style="font-size: 16px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.6;">
+        We are always looking for passionate, growth-minded professionals to join our team. 
+        Multiple positions are open across various departments, including <strong>Chartered Accountants (CAs)</strong>, 
+        <strong>Semi-Qualified CAs</strong>, <strong>Paid Assistants</strong>, and <strong>CA Articleship / Trainees</strong>.
+      </p>
+      <p style="font-size: 15.5px; color: var(--text-dark); margin-bottom: 24px; font-weight: 500;">
+        If you are interested in joining our firm and growing with us, please drop your CV / Resume at:
+      </p>
+      <a href="mailto:caabinashsingh@gmail.com" class="cta-btn" style="display: inline-flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 600; padding: 14px 28px; border-radius: 9px; box-shadow: 0 10px 20px -8px rgba(22, 54, 95, 0.4);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        caabinashsingh@gmail.com
+      </a>
     </div>
-
-    <!-- Right: Application Form -->
-    <div class="form-container">
-      <h3 class="form-title">Apply Now</h3>
-      <p class="form-subtitle">Fill out the form below, and our HR team will review your application.</p>
-      
-      <form id="careersForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" required placeholder="Your name">
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number *</label>
-            <input type="tel" id="phone" required placeholder="Phone number">
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email Address *</label>
-          <input type="email" id="email" required placeholder="email@example.com">
-        </div>
-        
-        <div class="form-group">
-          <label for="position">Position Applied For *</label>
-          <select id="position" required>
-            <option value="">Select a position...</option>
-            <option value="articleship">CA Articleship (Trainee)</option>
-            <option value="ca">Qualified CA</option>
-            <option value="semi_qualified">Semi-Qualified CA / Paid Assistant</option>
-            <option value="graduate">Commerce Graduate / Other</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="summary">Brief Profile Summary / Experience</label>
-          <textarea id="summary" rows="4" placeholder="Briefly describe your qualification, achievements, and past experience..."></textarea>
-        </div>
-        
-        <button type="submit" class="submit-btn">
-          Submit Profile
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </button>
-      </form>
-    </div>
-
   </div>
 
   <!-- ============ FOOTER ============ -->
@@ -553,8 +469,11 @@
     <div class="footer-container">
       
       <!-- Col 1: About -->
-      <div class="footer-logo-area">
-        <div class="footer-name">Abinash & Co.</div>
+      <div class="footer-logo-area" style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="logo.jpeg" alt="Abinash & Co." style="height: 36px; object-fit: contain; border-radius: 4px;">
+          <span class="footer-name" style="font-family: var(--font-title); font-weight: 700; font-size: 22px; color: #ffffff; letter-spacing: -0.5px;">Abinash & Co.</span>
+        </div>
         <p class="footer-desc">Helping startups, businesses, and individuals navigate tax compliance, audits, and corporate regulations worldwide.</p>
       </div>
 
@@ -587,7 +506,7 @@
         <div class="footer-col-title">Contact</div>
         <div class="footer-links">
           <a href="mailto:caabinashsingh@gmail.com">caabinashsingh@gmail.com</a>
-          <a style="color: #aebcd2; cursor: default;">+91 99342 09266</a>
+          <a href="tel:+919681034747" style="color: #aebcd2;">+91 96810 34747</a>
           <a style="color: #aebcd2; cursor: default;">Pan-India Operations</a>
         </div>
       </div>
@@ -601,54 +520,6 @@
   </footer>
 
 
-  <script>
-    document.getElementById('careersForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('.submit-btn');
-      if (btn) {
-        btn.disabled = true;
-        btn.innerHTML = 'Submitting...';
-      }
-      
-      const scriptUrl = 'YOUR_GOOGLE_SHEET_CAREERS_URL_HERE';
-      
-      const formData = new FormData();
-      formData.append('Date', new Date().toLocaleString());
-      formData.append('Name', document.getElementById('name').value);
-      formData.append('Phone', document.getElementById('phone').value);
-      formData.append('Email', document.getElementById('email').value);
-      formData.append('Position', document.getElementById('position').value);
-      formData.append('Summary', document.getElementById('summary').value);
-      
-      if (!scriptUrl || scriptUrl.indexOf('YOUR_') === 0) {
-        console.warn('Google Sheet URL not set. Simulating careers submission.');
-        alert('Thank you! Your profile has been submitted successfully (Simulation).');
-        e.target.reset();
-        if (btn) {
-          btn.disabled = false;
-          btn.innerHTML = 'Submit Profile <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>';
-        }
-        return;
-      }
-      
-      fetch(scriptUrl, { method: 'POST', body: formData })
-        .then(response => {
-          alert('Thank you! Your profile has been submitted successfully.');
-          e.target.reset();
-        })
-        .catch(error => {
-          console.error('Error submitting application:', error);
-          alert('Thank you! Your profile has been submitted successfully.');
-          e.target.reset();
-        })
-        .finally(() => {
-          if (btn) {
-            btn.disabled = false;
-            btn.innerHTML = 'Submit Profile <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>';
-          }
-        });
-    });
-  </script>
 </body>
 
 </html>
